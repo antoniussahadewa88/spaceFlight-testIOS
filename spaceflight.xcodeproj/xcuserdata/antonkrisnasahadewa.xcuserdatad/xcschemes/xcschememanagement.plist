@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JWTDecode (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Sample-iOS (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>spaceflight.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>401533882EBF2EFA005BA896</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4015339A2EBF2EFF005BA896</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>401533A42EBF2EFF005BA896</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

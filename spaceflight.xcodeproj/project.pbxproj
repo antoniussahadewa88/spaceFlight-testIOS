@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		401533BA2EBF30D9005BA896 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 401533B92EBF30D9005BA896 /* Alamofire */; };
+		401533BF2EBF368B005BA896 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 401533BE2EBF368B005BA896 /* Auth0 */; };
+		401533C22EBF3758005BA896 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 401533C12EBF3758005BA896 /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4015339C2EBF2EFF005BA896 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401533BF2EBF368B005BA896 /* Auth0 in Frameworks */,
+				401533BA2EBF30D9005BA896 /* Alamofire in Frameworks */,
+				401533C22EBF3758005BA896 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = spaceflight;
 			packageProductDependencies = (
+				401533B92EBF30D9005BA896 /* Alamofire */,
+				401533BE2EBF368B005BA896 /* Auth0 */,
+				401533C12EBF3758005BA896 /* Swinject */,
 			);
 			productName = spaceflight;
 			productReference = 401533892EBF2EFA005BA896 /* spaceflight.app */;
@@ -195,6 +207,11 @@
 			);
 			mainGroup = 401533802EBF2EFA005BA896;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				401533B82EBF30D9005BA896 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				401533BD2EBF368B005BA896 /* XCRemoteSwiftPackageReference "Auth0" */,
+				401533C02EBF3758005BA896 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4015338A2EBF2EFA005BA896 /* Products */;
 			projectDirPath = "";
@@ -395,13 +412,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = spaceflight;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,13 +445,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = spaceflight;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +477,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
@@ -477,6 +499,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
@@ -497,6 +520,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisliaTech.spaceflightUITests;
@@ -516,6 +540,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY5LZ6CJF;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisliaTech.spaceflightUITests;
@@ -570,6 +595,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		401533B82EBF30D9005BA896 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		401533BD2EBF368B005BA896 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.15.1;
+			};
+		};
+		401533C02EBF3758005BA896 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		401533B92EBF30D9005BA896 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401533B82EBF30D9005BA896 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		401533BE2EBF368B005BA896 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401533BD2EBF368B005BA896 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+		401533C12EBF3758005BA896 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401533C02EBF3758005BA896 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 401533812EBF2EFA005BA896 /* Project object */;
 }

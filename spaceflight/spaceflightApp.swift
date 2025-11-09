@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
-import CoreData
+import Combine
+import Swinject
+import UserNotifications
 
 @main
 struct spaceflightApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var authState = AuthState.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView()
+                .environmentObject(authState)
+                .environmentObject(DI.container.resolve(ArticleListViewModel.self)!)
         }
     }
 }
+
