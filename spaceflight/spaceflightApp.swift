@@ -14,6 +14,7 @@ import UserNotifications
 struct spaceflightApp: App {
     @StateObject private var authState = AuthState.shared
 
+    //test
     var body: some Scene {
         WindowGroup {
             RootView()
