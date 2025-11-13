@@ -16,6 +16,7 @@ struct ReusableText: View {
     var fontSize: CGFloat = 12
     var fontWeight: Font.Weight = .regular
     var maxLines: Int? = nil
+    var isItalic: Bool = false
     var isUnderline: Bool = false
     var underlineColor: String = ""
     //padding
@@ -34,5 +35,6 @@ struct ReusableText: View {
             .padding(.leading,paddingLeft)
             .padding(.trailing,paddingRight)
             .underline(isUnderline, color: isTextColorHex ? Color(hex: textColorHex) : textColor )
+            .italic(isItalic)
     }
 }

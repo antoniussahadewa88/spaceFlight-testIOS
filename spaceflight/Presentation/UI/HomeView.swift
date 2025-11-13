@@ -15,14 +15,8 @@ struct HomeView: View {
     
     var body: some View {
         ReusableVStack {
-            Text("Good Morning")
-                .font(.title)
-                .fontWeight(.bold)
-            Text("Test Username")
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .italic()
-                .padding(.bottom,16)
+            ReusableText(text:"Good Morning",textColor:.black, fontSize: 18,fontWeight: .bold,paddingLeft: 16)
+            ReusableText(text:"Test Username",textColor:.gray, fontSize: 16,fontWeight: .semibold,isItalic: true,paddingBottom: 16,paddingLeft: 16)
             
             //this for view Artikel
             ReusableHStack(paddingTop:16, paddingBottom:6, paddingLeft: 16, paddingRight: 16){
