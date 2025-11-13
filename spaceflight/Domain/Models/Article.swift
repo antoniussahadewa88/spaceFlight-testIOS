@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 struct Article: Identifiable, Equatable {
     let id: Int
     let title: String

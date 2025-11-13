@@ -31,3 +31,17 @@ struct ArticleRow: View {
         }
     }
 }
+
+#Preview {
+    ArticleRow(article: Article(
+        id: 1,
+        title: "Sample Title",
+        url: URL(string: "https://example.com"),
+        imageUrl: URL(string: "https://via.placeholder.com/150"),
+        newsSite: "Spaceflight News",
+        summary: "Sample summary for preview only",
+        publishedAt: Date(),
+        launches: [],
+        events: []
+    ))
+}

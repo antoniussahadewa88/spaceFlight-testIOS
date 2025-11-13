@@ -8,6 +8,9 @@
 import SwiftUI
 import Combine
 
+//ini sementara dijadikan salah satu bagian maintabview karenawaktu mendesak.
+//untuk tab utama ada di HomeView(artikel,blog,report) yang perkomponennya
+//sedang di selesaikan
 struct ArticleListView: View {
     @EnvironmentObject var vm: ArticleListViewModel
     @EnvironmentObject var auth: AuthState
@@ -52,4 +55,11 @@ struct ArticleListView: View {
         default: return "Good night"
         }
     }
+}
+
+#Preview {
+    ArticleListView()
+        .environmentObject(AuthState.shared)
+        .environmentObject(MockArticleListViewModel())
+        .preferredColorScheme(.light)
 }
