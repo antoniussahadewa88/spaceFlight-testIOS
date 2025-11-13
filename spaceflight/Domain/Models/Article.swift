@@ -46,3 +46,34 @@ extension ArticleDTO {
         )
     }
 }
+
+extension Article {
+    static let mockArticles: [Article] = [
+        Article(
+            id: 1,
+            title: "NASA Successfully Launches Artemis II Mission",
+            url: URL(string: "https://example.com/artemis"),
+            imageUrl: URL(string: "https://example.com/artemis.jpg"),
+            newsSite: "SpaceNews",
+            summary: "NASA has successfully launched the Artemis II mission to orbit the Moon.",
+            publishedAt: ISO8601DateFormatter().date(from: "2025-11-12T10:00:00Z"),
+            launches: [
+                Launch(id: "abc123", provider: "NASA")
+            ],
+            events: [
+                Event(id: "ev123", provider: "SpaceX")
+            ]
+        ),
+        Article(
+            id: 2,
+            title: "SpaceX Starship Completes Test Flight",
+            url: URL(string: "https://example.com/starship"),
+            imageUrl: URL(string: "https://example.com/starship.jpg"),
+            newsSite: "SpaceFlight Insider",
+            summary: "Starship reached orbit and landed successfully, marking a new milestone.",
+            publishedAt: ISO8601DateFormatter().date(from: "2025-11-10T15:30:00Z"),
+            launches: [],
+            events: []
+        )
+    ]
+}

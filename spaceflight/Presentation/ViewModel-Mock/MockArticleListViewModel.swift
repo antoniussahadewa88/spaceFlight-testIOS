@@ -13,7 +13,6 @@ final class MockArticleListViewModel: ObservableObject {
     @Published var isLoading: Bool = false
 
     init() {
-        // sample Article sesuai dengan modelmu (URL? dan arrays)
         articles = [
             Article(
                 id: 1,

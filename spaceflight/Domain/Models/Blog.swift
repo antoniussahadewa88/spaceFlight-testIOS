@@ -97,3 +97,88 @@ extension BlogEventDTO {
         BlogEvent(id: event_id.map { "\($0)" }, provider: provider)
     }
 }
+
+
+//mock blog
+extension Blog {
+    static let mockBlogs: [Blog] = [
+        Blog(
+            id: 1,
+            title: "SpaceX Announces New Starship Launch",
+            authors: [
+                Author(
+                    name: "Elon Musk",
+                    socials: Socials(
+                        x: "@elonmusk",
+                        youtube: nil,
+                        instagram: "elon.musk",
+                        linkedin: nil,
+                        mastodon: nil,
+                        bluesky: nil
+                    )
+                )
+            ],
+            url: URL(string: "https://example.com/blog1"),
+            imageUrl: URL(string: "https://via.placeholder.com/200"),
+            newsSite: "SpaceX Blog",
+            summary: "An update on the upcoming Starship mission and new engineering milestones.",
+            publishedAt: Date(),
+            updatedAt: Date(),
+            featured: true,
+            launches: [],
+            events: []
+        ),
+        Blog(
+            id: 2,
+            title: "NASA Partners with Private Space Companies",
+            authors: [
+                Author(
+                    name: "Jane Doe",
+                    socials: Socials(
+                        x: "@janedoe",
+                        youtube: "janedoechannel",
+                        instagram: nil,
+                        linkedin: "jane-doe",
+                        mastodon: nil,
+                        bluesky: nil
+                    )
+                )
+            ],
+            url: URL(string: "https://example.com/blog2"),
+            imageUrl: URL(string: "https://via.placeholder.com/200"),
+            newsSite: "NASA Blog",
+            summary: "NASA announced a new collaboration with private space enterprises to boost exploration projects.",
+            publishedAt: Date(),
+            updatedAt: Date(),
+            featured: false,
+            launches: [],
+            events: []
+        ),
+        Blog(
+            id: 3,
+            title: "The Future of Mars Colonization",
+            authors: [
+                Author(
+                    name: "John Space",
+                    socials: Socials(
+                        x: "@johnspace",
+                        youtube: nil,
+                        instagram: nil,
+                        linkedin: "john-space",
+                        mastodon: nil,
+                        bluesky: nil
+                    )
+                )
+            ],
+            url: URL(string: "https://example.com/blog3"),
+            imageUrl: URL(string: "https://via.placeholder.com/200"),
+            newsSite: "Space Daily",
+            summary: "A deep dive into the feasibility of human settlements on Mars in the next decade.",
+            publishedAt: Date(),
+            updatedAt: Date(),
+            featured: true,
+            launches: [],
+            events: []
+        )
+    ]
+}

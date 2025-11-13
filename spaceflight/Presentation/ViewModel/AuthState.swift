@@ -38,14 +38,14 @@ final class AuthState: ObservableObject {
 
     // MARK: - AUTO LOGOUT (10 minutes)
     private func scheduleAutoLogout() {
-        let expiry = Date().addingTimeInterval(60) // 10 menit
+        let expiry = Date().addingTimeInterval(300) // 5 menit
         UserDefaults.standard.set(expiry, forKey: expiryKey)
 
         // Local notification
-        LocalNotificationScheduler.scheduleAutoLogout(after: 60)
+        LocalNotificationScheduler.scheduleAutoLogout(after: 300)
 
         // Auto logout otomatis (walau tanpa notifikasi)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 60) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 300) { [weak self] in
             guard let self else { return }
             if self.isLoggedIn { self.logout() }
         }

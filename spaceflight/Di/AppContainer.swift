@@ -34,7 +34,12 @@ enum DI {
             ArticleListViewModel(fetchUseCase: r.resolve(FetchArticlesUseCase.self)!)
         }
         
-        
+        c.register(HomeViewModel.self) { _ in
+            HomeViewModel(
+                articleRepository: MockArticleRepository(),
+                blogRepository: MockBlogRepository()
+            )
+        }
         
         c.register(RecentSearchRepository.self) { _ in
             RecentSearchRepositoryImpl()

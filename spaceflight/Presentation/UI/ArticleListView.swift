@@ -27,17 +27,6 @@ struct ArticleListView: View {
                     }
                 }
             }
-            .navigationTitle(greeting())
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Logout") { auth.logout() }
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Refresh") {
-                        Task { await vm.fetchAll() }
-                    }
-                }
-            }
             .task {
                 if vm.articles.isEmpty {
                     await vm.fetchAll()
@@ -45,21 +34,10 @@ struct ArticleListView: View {
             }
         }
     }
-
-    func greeting() -> String {
-        let hour = Calendar.current.component(.hour, from: Date())
-        switch hour {
-        case 5..<12: return "Good morning"
-        case 12..<17: return "Good afternoon"
-        case 17..<21: return "Good evening"
-        default: return "Good night"
-        }
-    }
 }
 
 #Preview {
     ArticleListView()
-        .environmentObject(AuthState.shared)
         .environmentObject(MockArticleListViewModel())
         .preferredColorScheme(.light)
 }
